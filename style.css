@@ -1,0 +1,48 @@
+body{
+    font-family:Arial;
+    background:#f4f4f4;
+    padding:20px;
+}
+.container{
+    max-width:400px;
+    margin:auto;
+    background:#fff;
+    padding:15px;
+    border-radius:6px;
+}
+input,select,button{
+    width:100%;
+    padding:8px;
+    margin:5px 0;
+}
+button{
+    background:#007bff;
+    color:#fff;
+    border:none;
+}
+ul{
+    list-style:none;
+    padding:0;
+}
+li{
+    display:flex;
+    justify-content:space-between;
+    padding:6px;
+    margin:4px 0;
+}
+.income{
+    background:#d4f8d4;
+}
+.expense{
+    background:#f8d4d4;
+}
+li button{
+    background:red;
+    color:#fff;
+    border:none;
+    padding:3px 6px;
+}
+.totals{
+    font-weight:bold;
+    margin-top:10px;
+}

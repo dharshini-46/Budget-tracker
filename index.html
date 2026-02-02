@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Budget Tracker</h2>
+        <input id="desc" placeholder="Description">
+        <input id="amount" type="number" placeholder="Amount">
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <button onclick="addTransaction()">Add</button>
+        <select id="filter" onchange="render()">
+            <option value="all">All</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <ul id="list"></ul>
+        <div class="totals">
+            <p>Income: ₹<span id="income">0</span></p>
+            <p>Expense: ₹<span id="expense">0</span></p>
+            <p>Balance: ₹<span id="balance">0</span></p>
+        </div>
+        <canvas id="chart" width="300" height="200"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
